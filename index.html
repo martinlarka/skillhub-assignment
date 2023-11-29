@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="se">
+  <head>
+    <title>Assignment</title>
+    <meta name="description" content="Skillhub assignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Anmälan till nyhetsbrev</h1>
+      <p>Anmäl dig till vårt nyhetsbrev</p>
+
+      <form id="newsletter-form">
+        <h2>Personuppgifter</h2>
+        <label for="name">Namn<span>*</span></label>
+
+        <br />
+        <input type="text" id="name" name="name" required />
+        <br />
+        <span><span>&#8505;</span> Skriv ditt för- och efternamn</span>
+        <br /><br />
+
+        <label for="email">E-post<span>*</span></label>
+        <br />
+        <input type="text" id="email" name="email" type="email" required />
+        <br /><br />
+
+        <h2>Områden</h2>
+        <label for="select-topics">Välj ett eller fler områden</label>
+        <br />
+        <select id="select-topics">
+          <option disabled selected value="">Välj område</option>
+          <option value="education">Förskola och utbildning</option>
+          <option value="literature">Litteratur och bibliotek</option>
+          <option value="urban-development">Stadsutveckling</option>
+          <option value="sports">Motion och idrott</option>
+          <option value="traffic">Trafik och gator</option>
+          <option value="work-life">Arbetsliv och jobb</option>
+          <option value="politics">Kommun och politik</option>
+        </select>
+
+        <button id="add-topic-button" type="button">&#10133;</button>
+
+        <div id="selected-topics-wrapper"></div>
+
+        <br />
+        <br />
+        <button>Skicka in</button>
+      </form>
+    </main>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
